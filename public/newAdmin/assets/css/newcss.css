@@ -1,0 +1,186 @@
+ul{
+    list-style: none;
+}
+.main-categories{padding:20px 0px;background-color: transparent}
+.sidebar-categories
+ .main-categories
+ .pixel-radio {
+        background:transparent !important
+    }
+    .common-filter{
+        background:transparent;
+
+    }
+    .sidebar-filter .common-filter .filter-list{
+        position:relative;
+    }
+    .sidebar-filter .common-filter:last-child{
+        border-bottom:0
+    }
+    .filter-list{
+        line-height:32px
+    }
+    .filter-list{
+        position:relative;
+    }.sidebar-filter .common-filter:last-child{
+        border-bottom:0
+    }.filter-list{line-height:32px}
+    .filter-list i{margin-right:10px;cursor:pointer}
+    .filter-list .number{color:#ccc}
+    .filter-list label{margin-bottom:3px;cursor:pointer ; color: white;}
+    @-webkit-keyframes click-wave{
+        0%{transform:translate(-50%, -50%) scale(1)
+            ;opacity:0.35;position:absolute;
+            top:50%;
+            left:50%}100%{transform:translate(-50%, -50%) scale(3);
+                opacity:0;top:50%;left:50%;position:absolute}
+            }
+            @-moz-keyframes click-wave{
+                0%{transform:translate(-50%, -50%) scale(1);
+                    opacity:0.35;position:absolute;top:50%;left:50%}100%{transform:translate(-50%, -50%) scale(3);
+                        opacity:0;top:50%;left:50%;position:absolute}
+                    }
+                    @keyframes click-wave
+                    {0%{transform:translate(-50%, -50%) scale(1);opacity:0.35;position:absolute;
+                        top:50%;left:50%}100%{transform:translate(-50%, -50%) scale(3);opacity:0;
+                            top:50%;left:50%;position:absolute}
+                        }
+                        .pixel-radio{background:transparent !important}
+                        .pixel-radio{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;position:relative;right:0;bottom:0;left:0;height:15px;width:15px;-webkit-transition:all 0.15s ease-out 0s;-moz-transition:all 0.15s ease-out 0s;transition:all 0.15s ease-out 0s;background:#fff;border:1px solid #999999;color:#fff;cursor:pointer;display:inline-block;margin-right:10px;outline:none;position:relative;z-index:1}.pixel-radio:checked{border:8px solid #ffffff}.pixel-radio:checked::after{-webkit-animation:click-wave 0.65s;-moz-animation:click-wave 0.65s;animation:click-wave 0.65s;background:#384aeb;content:'';display:block;width:15px;height:15px;border-radius:50%;position:relative;z-index:2;opacity:0}.pixel-radio{border-radius:50%;top:2px}.pixel-radio::after{border-radius:50%}.price-range-area .noUi-target{background:#eee;border-radius:0px;border:0px;box-shadow:none}
+                        .range-slider {
+        text-align: center;
+        }
+        .range-slider .rangeValues {
+        display: block;
+        }
+
+        input[type=range] {
+        -webkit-appearance: none;
+        border: 1px solid white;
+        width: 95%;
+        position: absolute;
+        left:6px
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 95%;
+        height: 5px;
+        background: #ddd;
+        border: none;
+        border-radius: 3px;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #21c1ff;
+        margin-top: -4px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        }
+
+        input[type=range]:focus {
+        outline: none;
+        }
+
+        input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #ccc;
+        }
+
+        input[type=range]::-moz-range-track {
+        width: 300px;
+        height: 5px;
+        background: #ddd;
+        border: none;
+        border-radius: 3px;
+        }
+
+        input[type=range]::-moz-range-thumb {
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #21c1ff;
+        }
+
+        /*hide the outline behind the border*/
+        input[type=range]:-moz-focusring {
+        outline: 1px solid white;
+        outline-offset: -1px;
+        }
+
+        input[type=range]::-ms-track {
+        width: 300px;
+        height: 5px;
+        /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+        background: transparent;
+        /*leave room for the larger thumb to overflow with a transparent border */
+        border-color: transparent;
+        border-width: 6px 0;
+        /*remove default tick marks*/
+        color: transparent;
+        z-index: -4;
+        }
+
+        input[type=range]::-ms-fill-lower {
+        background: #777;
+        border-radius: 10px;
+        }
+
+        input[type=range]::-ms-fill-upper {
+        background: #ddd;
+        border-radius: 10px;
+        }
+
+        input[type=range]::-ms-thumb {
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #21c1ff;
+        }
+
+        input[type=range]:focus::-ms-fill-lower {
+        background: #888;
+        }
+
+        input[type=range]:focus::-ms-fill-upper {
+        background: #ccc;
+        }
+
+
+        .switch{
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 27px;
+            border-radius: 27px;
+            box-shadow: inset 0px 0px 0px 1px #bdc3c7;
+            cursor: pointer;
+            transition: all .3s;
+          }
+          .switch input{
+            display: none;
+          }
+          .switch input:checked + div{
+            background-color: #3498db;
+            left: calc(100% - 25px);
+          }
+          .switch div{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 25px;
+            background-color: rgb(150,150,150);
+            top: 1px;
+            left: 0px;
+            transition: all .4s;
+          }
+
+          .switch-checked{
+            box-shadow : inset 0px 0px 0px 1px #3498db;
+          }
